@@ -1,6 +1,3 @@
-import math
-
-
 def Hello():
     print ("Hello world!!!!!!")
 
