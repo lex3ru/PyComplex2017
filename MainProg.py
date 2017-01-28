@@ -1,0 +1,2 @@
+import pyMP
+pyMP.Hello()
