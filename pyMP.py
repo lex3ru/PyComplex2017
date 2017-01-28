@@ -1,5 +1,5 @@
 def Hello():
-    print ("Hello world!!!!!!имвиавиавиви")
+    print ("Hello world!!!!!!имвиавиавиви!!!!!")
 
 def GenTime(StartT,N,fs)
     return np.linspace(StartT, (StartT+(N-1)/fs), N)
