@@ -1,4 +1,4 @@
-def Hello():
+def hello():
     print ("Hello world!!!!!!имвиавиавиви!!!!!")
 
 def GenTime(StartT,N,fs)
