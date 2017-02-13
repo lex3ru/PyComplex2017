@@ -25,7 +25,7 @@ class Signal_1D(WorkspaceObject):
         msg=self.SigProp["SigName"]
         return msg
 
-    def loadSignal(self, param, SourceType=1):
+    def loadSignal(self, param, SourceType = 1):
         # Тут сделать загрузку из разных источников
         if SourceType == 1:
             filename = param
