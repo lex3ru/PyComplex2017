@@ -27,6 +27,7 @@ class Signal_1D(WorkspaceObject):
 
     def loadSignal(self, param, SourceType = 1):
         # Тут сделать загрузку из разных источников
+        WF=[]
         if SourceType == 1:
             filename = param
             # fhandle = None
@@ -43,11 +44,11 @@ class Signal_1D(WorkspaceObject):
                     elif line != "":
                         line = line.rstrip("\n")
                         try:
-                            self.Waveform.append(float(line))
+                            WF.append(float(line))
                         except:
                             print("Error1")
                             print(line)
-                self.Waveform = np.array(self.Waveform)
+                self.Waveform = np.array(WF)
             except:
                 print("Error2")
 

@@ -2,6 +2,10 @@ import collections, pickle, os
 
 class GlobalParam (collections.UserDict):
     # Save global parameters
+    def NewConfigFile(self):
+        self['datapath'] = "c:\MyFiles\Development\Complex2016workdir\TestData\\n"
+        self.SaveParam()
+
     def SaveParam(self, filename = 'config.cfg'):
         path = os.path.abspath(os.curdir)  #Get current directory
         path = path.rstrip("\n")+"\\"+filename
@@ -32,4 +36,4 @@ class GlobalParam (collections.UserDict):
 
 class Global(object):
     """description of class"""
-    globalparam=GlobalParm() #[('datapath','c:\MyFiles\Development\Complex2016workdir\TestData\\n')]
+    globalparam=GlobalParam() #[('datapath','c:\MyFiles\Development\Complex2016workdir\TestData\\n')]
